@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist'), // путь к конечному файлу
     },
@@ -19,7 +20,7 @@ module.exports = {
                 test: /\.css$/i,
                 use: [
                     MiniCSSExtractPlugin.loader,
-                    'css-loader'
+                    'css-loader',
                 ]
             },
             {
@@ -35,11 +36,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: './index.html' // возможно эта строчка не нужна
+            filename: './index.html', // возможно эта строчка не нужна
         }),
         new MiniCSSExtractPlugin({
             filename: '[name].css',
-            chunkFilename: '[id].css'
+            chunkFilename: '[id].css',
         })
     ]
 }
