@@ -38,6 +38,7 @@
   "dependencies": {
     "core-js": "^3.26.0",
     "html-loader": "^4.2.0",
+    "npm": "^8.19.2",
     "save-dev": "^0.0.1-security"
   }
 }
