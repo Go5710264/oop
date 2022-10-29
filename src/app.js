@@ -1,7 +1,9 @@
+import Character from './index';
+
 export default class Bowerman extends Character {
-    constructor(name, type){
-      super(name, type);
-    }
-    attack = 25;
-    defence = 25;
+  constructor(name, type) {
+    super(name, type);
+    this.attack = 25;
+    this.defence = 25;
+  }
 }
