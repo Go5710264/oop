@@ -7,3 +7,6 @@ class Magician extends Character {
     this.defence = 40;
   }
 }
+
+const dak123 = new Magician('Dak1');
+dak123.send();

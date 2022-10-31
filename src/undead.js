@@ -7,3 +7,6 @@ class Undead extends Character {
     this.defence = 25;
   }
 }
+
+const dak11 = new Undead('Dak1');
+dak11.send();

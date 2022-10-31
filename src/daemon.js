@@ -7,3 +7,6 @@ class Daemon extends Character {
     this.defence = 40;
   }
 }
+
+const dak122 = new Daemon('Dak1');
+dak122.send();

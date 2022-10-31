@@ -7,3 +7,6 @@ class Swordsmaster extends Character {
     this.defence = 10;
   }
 }
+
+const dak115 = new Swordsmaster('Dak1');
+dak115.send();

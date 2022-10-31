@@ -7,3 +7,6 @@ class Zombie extends Character {
     this.defence = 10;
   }
 }
+
+const dak117 = new Zombie('Dak1');
+dak117.send();
