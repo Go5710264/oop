@@ -1,19 +1,19 @@
 import Character from '../character';
 
 test('name more than 10 characters throws an error', () => {
-  expect(() => { Character('xxxDanielDefoexxx'); }).toThrow(/^Некорректная строка!$/);
+  expect(() => { new Character('xxxDanielDefoexxx'); }).toThrow(/^Некорректная строка!$/);
 });
 
 test('name less than 2 characters throws an error', () => {
-  expect(() => { Character('I'); }).toThrow(/^Некорректная строка!$/);
+  expect(() => { new Character('I'); }).toThrow(/^Некорректная строка!$/);
 });
 
 test('name from numeric value throws an error', () => {
-  expect(() => { Character(5555); }).toThrow(/^Некорректная строка!$/);
+  expect(() => { new Character(5555); }).toThrow(/^Некорректная строка!$/);
 });
 
 test('wrong type entered', () => {
-  expect(() => { Character('name', 'SwordSinger'); }).toThrow(/^Некорректная строка!$/);
+  expect(() => { new Character('name', 'SwordSinger'); }).toThrow(/^Некорректная строка!$/);
 });
 
 // const nameList = [
@@ -36,5 +36,5 @@ test('get object', () => {
     level: 1,
   };
 
-  expect(Character('Dak1', 'Bowman', 20, 40)).toEqual(result);
+  expect(new Character('Dak1', 'Bowman', 20, 40)).toEqual(result);
 });

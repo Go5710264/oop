@@ -9,4 +9,4 @@ class Zombie extends Character {
 }
 
 const zombieСharacter = new Zombie('BM');
-// console.log(zombieСharacter);
+console.log(zombieСharacter);
