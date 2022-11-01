@@ -8,5 +8,5 @@ class Zombie extends Character {
   }
 }
 
-const dak117 = new Zombie('Dak1');
-dak117.send();
+const zombieСharacter = new Zombie('BM');
+console.log(zombieСharacter);

@@ -8,5 +8,5 @@ class Magician extends Character {
   }
 }
 
-const dak123 = new Magician('Dak1');
-dak123.send();
+const magicianСharacter = new Magician('BM');
+console.log(magicianСharacter);

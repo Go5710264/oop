@@ -8,5 +8,5 @@ class Swordsmaster extends Character {
   }
 }
 
-const dak115 = new Swordsmaster('Dak1');
-dak115.send();
+const swordsmasterСharacter = new Swordsmaster('BM');
+console.log(swordsmasterСharacter);

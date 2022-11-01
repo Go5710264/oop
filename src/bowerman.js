@@ -8,5 +8,5 @@ class Bowerman extends Character {
   }
 }
 
-const dak1 = new Bowerman('Dak1');
-dak1.send();
+const bowermanСharacter = new Bowerman('BM');
+console.log(bowermanСharacter);

@@ -8,4 +8,5 @@ class Daemon extends Character {
   }
 }
 
-new Daemon('Dak1');
+const deamonСharacter = new Daemon('BM');
+console.log(deamonСharacter);

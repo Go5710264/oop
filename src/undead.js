@@ -8,5 +8,5 @@ class Undead extends Character {
   }
 }
 
-const dak11 = new Undead('Dak1');
-dak11.send();
+const undeadСharacter = new Undead('BM');
+console.log(undeadСharacter);
