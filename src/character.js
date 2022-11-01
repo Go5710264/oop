@@ -13,8 +13,4 @@ export default class Character {
       throw new Error('Некорректная строка!');
     }
   }
-
-  send() {
-    console.log(this.name, this.attack, this.health, this.level);
-  }
 }

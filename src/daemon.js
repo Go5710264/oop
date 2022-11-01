@@ -1,12 +1,11 @@
 import Character from './character';
 
 class Daemon extends Character {
-  constructor(name, type) {
-    super(name, type);
+  constructor(name) {
+    super(name, 'Daemon');
     this.attack = 10;
     this.defence = 40;
   }
 }
 
-const dak122 = new Daemon('Dak1');
-dak122.send();
+new Daemon('Dak1');
