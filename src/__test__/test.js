@@ -1,4 +1,5 @@
 import Character from '../character';
+import Bowerman from '../bowerman';
 
 test('name more than 10 characters throws an error', () => {
   expect(() => {
@@ -28,24 +29,15 @@ test('wrong type entered', () => {
   }).toThrow(/^Некорректная строка!$/);
 });
 
-/* const nameList = [
-  new Character('xxxDanielDefoexxx'),
-  new Character('I'),
-  new Character(5555),
-  new Character('name', 'SwordSinger')
-];
-
-const handler = test.each(nameList);
-handler('tests that will throw an error') */
+const result = {
+  name: 'Dak1',
+  type: 'Bowerman',
+  attack: 25,
+  defence: 25,
+  health: 100,
+  level: 1,
+};
 
 test('get object', () => {
-  const result = {
-    name: 'Dak1',
-    type: 'Bowman',
-    attack: 20,
-    defence: 40,
-    health: 100,
-    level: 1,
-  };
-  expect(new Character('Dak1', 'Bowman', 20, 40)).toEqual(result);
+  expect(new Bowerman('Dak1')).toEqual(result);
 });
