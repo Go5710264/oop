@@ -8,7 +8,7 @@ export default class Character {
       this.health = 100;
       this.level = 1;
     } else {
-      let error = new Error('Некорректная строка!');
+      const error = new Error('Некорректная строка!');
       throw error.message;
     }
   }
